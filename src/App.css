@@ -1,8 +1,11 @@
 #root {
   max-width: 1280px;
-  height: 1000px;
+  /* height: 1000px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding-top: 2rem; */
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: center;
 }
 
@@ -61,4 +64,72 @@ a:hover{
 .item{
   border-radius: 10px;
   transition: .3s ease-in;
+}
+
+.header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.content{
+  padding-top: 110px;
+  min-width: 800px;
+  display: inline-flex;
+}
+
+.content_1 {
+  width: 50%;
+}
+
+.content_2 {
+  width: 50%;
+}
+
+.burger {
+  display: none;
+}
+
+.menu {
+  display: inline-flex;
+}
+
+@media only screen and (max-width: 800px) {
+  .content{
+    display: inline-block;
+  }
+
+  .content_1 {
+    width: 100%;
+  }
+
+  .content_2 {
+    width: 100%;
+  }
+
+  .burger {
+    display: inline;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .line_1{
+    border: 1px solid black;
+  }
+  
+  .line_2{
+    border: 1px solid black;
+  }
+  
+  .line_3{
+    border: 1px solid black;
+  }
 }

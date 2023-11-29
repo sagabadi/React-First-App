@@ -1,2 +1,2 @@
-# React-First-App
-Make A Simple Page Using React
+# react-first-app
+ Create Simple Page In React
