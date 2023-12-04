@@ -3,13 +3,18 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import { useNavigate } from "react-router-dom"
+// import { useLocation } from 'react-router-dom'
 
 const Header = () => {
     // const [count, setCount] = useState(0)
     const navigate = useNavigate()
+    // const location = useLocation()
+
+    // const isActiveHome = true
+    
     return (
       <>
-        <div className='header w-full inline-flex pl-8 pr-8 bg-white'>
+        <div className='header w-full inline-flex pl-8 pr-8 bg-white shadow-sm'>
           <div className="menu w-2/3 justify-around">
             <a href="" onClick={() => navigate('/')}>
               <div className='item p-2 w-28'>
