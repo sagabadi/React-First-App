@@ -51,10 +51,10 @@ const Header = () => {
             <div className="line_2 w-8 mt-2 border border-black"></div>
             <div className="line_3 w-8 mt-2 border border-black"></div>
           </div>
-          <div className='close'>
-            <div className="line_1 w-8 border border-black rotate-45"></div>
-            <div className="line_1 w-8 border border-black -rotate-45"></div>
-          </div>
+          {/* <div className='close p-2 inline-block'>
+            <div className="line_1 w-8 rotate-45"></div>
+            <div className="line_1 w-8 -rotate-45"></div>
+          </div> */}
         </div>
       </>
     )
