@@ -110,9 +110,13 @@ a:hover{
   width: 50%;
 }
 
-.burger {
+.burger_menu {
   display: none;
 }
+
+/* .close {
+  display: none;
+} */
 
 .menu {
   display: inline-flex;
@@ -152,9 +156,15 @@ a:hover{
     width: 80%;
   }
 
-  .burger {
-    display: inline;
+  .burger_menu{
+    display: inline-block;
+    padding: 0.5 rem;
   }
+
+  .close {
+    display: none;
+  }
+  
 
   /* .header {
     display: none;
@@ -168,15 +178,5 @@ a:hover{
     display: none;
   }
 
-  .line_1{
-    border: 1px solid black;
-  }
-  
-  .line_2{
-    border: 1px solid black;
-  }
-  
-  .line_3{
-    border: 1px solid black;
-  }
+
 }

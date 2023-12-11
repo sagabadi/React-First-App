@@ -3,37 +3,35 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import { useNavigate } from "react-router-dom"
-// import { useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 const Header = () => {
     // const [count, setCount] = useState(0)
     const navigate = useNavigate()
-    // const location = useLocation()
-
-    // const isActiveHome = true
+    const location = useLocation()
     
     return (
       <>
         <div className='header w-full inline-flex pl-8 pr-8 bg-white shadow-sm'>
           <div className="menu w-2/3 justify-around">
             <a href="" onClick={() => navigate('/')}>
-              <div className='item p-2 w-28'>
+              <div className={location.pathname == '/' ? "item p-2 w-28 active": "item p-2 w-28"}>
                 Home
               </div>
             </a>
             <a href="" onClick={() => navigate('/profil')}>
-              <div className='item p-2 w-28'>
+              <div className={location.pathname == '/profil' ? "item p-2 w-28 active": "item p-2 w-28"}>
                 Profil
               </div>
             </a>
-            <a href="" onClick={() => navigate('/portofolio')}>
-              <div className='item p-2 w-28'>
-                Portofolio
+            <a href="" onClick={() => navigate('/experience')}>
+              <div className={location.pathname == '/experience' ? "item p-2 w-28 active": "item p-2 w-28"}>
+                Experience
               </div>
             </a>
-            <a href="" onClick={() => navigate('/experience')}>
-              <div className='item p-2 w-28'>
-                Experience
+            <a href="" onClick={() => navigate('/portofolio')}>
+              <div className={location.pathname == '/portofolio' ? "item p-2 w-28 active": "item p-2 w-28"}>
+                Portofolio
               </div>
             </a>
           </div>
@@ -48,10 +46,14 @@ const Header = () => {
                 </label>
             </div>
           </div>
-          <div className='burger p-2 inline-block'>
-            <div className="line_1 w-8"></div>
-            <div className="line_2 w-8 mt-2"></div>
-            <div className="line_3 w-8 mt-2"></div>
+          <div className='burger_menu'>
+            <div className="line_1 w-8 border border-black"></div>
+            <div className="line_2 w-8 mt-2 border border-black"></div>
+            <div className="line_3 w-8 mt-2 border border-black"></div>
+          </div>
+          <div className='close'>
+            <div className="line_1 w-8 border border-black rotate-45"></div>
+            <div className="line_1 w-8 border border-black -rotate-45"></div>
           </div>
         </div>
       </>
