@@ -9,38 +9,43 @@
   text-align: center;
 }
 
-.xxx {
-  background: green;
-  width: 400px;
-  height: 100px;
-  line-height: 100px;
-  color: white;
-  text-align: center;
+@keyframes growDown {
+  0% {
+    transform: scaleY(0)
+  }
+
+  80% {
+    transform: scaleY(1.1)
+  }
+
+  100% {
+    transform: scaleY(1)
+  }
 }
 
-/* Toggled State */
-input[type=checkbox]:checked ~ .xxx {
-  background: red;
-}
-
-input[type=checkbox] {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
+.full_outside {
+  /* z-index: 999; */
+  display: none;
 }
 
 @keyframes slideInLeft {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .logo {
@@ -49,9 +54,11 @@ input[type=checkbox] {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -60,6 +67,7 @@ input[type=checkbox] {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -79,43 +87,45 @@ input[type=checkbox] {
   color: #888;
 }
 
-a{
+a {
   transition: .1s ease-in;
 }
 
-.active{
+.active {
   background-color: rgb(0, 189, 189);
-  border-radius: 30px;
+  border-radius: 0px;
   color: white;
 }
 
-a:hover{
+a:hover {
   transition: .1s ease-out;
   color: white;
   /* text-decoration: underline; */
 }
 
-.item:hover{
+.item:hover {
   transition: .3s ease-out;
   background-color: rgb(0, 189, 189);
   border-radius: 30px;
 }
 
-.item{
+.item {
   border-radius: 30px;
   transition: .3s ease-in;
 }
 
-.header{
+.header {
   position: fixed;
   left: 0;
   top: 0;
   padding-top: 30px;
   padding-bottom: 30px;
+  /* @apply bg-white; */
+  /* z-index: 999999; */
   /* animation: 1s ease-out 0s 1 slideInLeft; */
 }
 
-.content{
+.content {
   padding-top: 110px;
   /* min-width: 800px; */
   display: inline-flex;
@@ -155,9 +165,53 @@ a:hover{
   width: 50%;
 }
 
+.bg_full {
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
-  .content{
+  .content {
     display: inline-block;
+  }
+
+  .burger_menu_button-active>.item {
+    border-radius: 0px;
+  }
+
+  .burger_menu_button-active>.active {
+    border-radius: 0px;
+  }
+
+  .burger_menu_button-active>.bg_full {
+    z-index: 998;
+    height: 100vh;
+    border-top: white;
+    @apply left-0 top-60 w-full block fixed pt-24 bg-black opacity-50
+  }
+
+  /* .burger_menu_button-active > .bg_full_{
+    z-index: 999;
+    height: 100vh;
+    border-top: white;
+    @apply left-0 top-0 w-full block absolute pt-24 bg-white
+  } */
+
+  .burger_menu_button-active>.full_outside {
+    z-index: 1999;
+    animation: growDown 150ms ease-in-out;
+    @apply left-0 w-full flex flex-col fixed pt-8 bg-white origin-top
+  }
+
+  .burger_menu_button-active>.line_1 {
+    @apply origin-top-left rotate-45
+  }
+
+  .burger_menu_button-active>.line_2 {
+    @apply scale-0
+  }
+
+  .burger_menu_button-active>.line_3 {
+    @apply origin-bottom-left -rotate-45
   }
 
   .content_1 {
@@ -176,7 +230,7 @@ a:hover{
     width: 80%;
   }
 
-  .burger_menu{
+  .burger_menu {
     display: inline-block;
     padding: 0.5 rem;
   }
@@ -184,7 +238,7 @@ a:hover{
   .close {
     display: none;
   }
-  
+
 
   /* .header {
     display: none;
@@ -197,6 +251,5 @@ a:hover{
   .menu_1 {
     display: none;
   }
-
 
 }
