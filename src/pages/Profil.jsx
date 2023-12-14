@@ -5,12 +5,13 @@
 import Header from "./Header"
 
 const Profil = () => {
-    // const [count, setCount] = useState(0)
-  
-    return (
-      <>
-        <Header/>
-        <div className="content w-full flex flex-col">
+  // const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <Header />
+      <div className="content w-full justify-center">
+        <div className='content-primary justify-between flex-col'>
           <div className="content_11 w-full">
             <div className='isi pt-16'>
               <h1 className='title text-6xl'>Hello Everyone!!</h1>
@@ -33,9 +34,9 @@ const Profil = () => {
             </div> */}
           </div>
         </div>
-      </>
-    )
-  }
-  
-  export default Profil
-  
+      </div>
+    </>
+  )
+}
+
+export default Profil
