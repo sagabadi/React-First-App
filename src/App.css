@@ -193,9 +193,17 @@ a:hover {
   display: none;
 }
 
+.grid {
+  @apply grid-cols-6;
+}
+
 @media only screen and (max-width: 800px) {
   .foot{
     @apply flex-col
+  }
+
+  .grid {
+    @apply grid-cols-3;
   }
 
   .footer_1{
