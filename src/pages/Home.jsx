@@ -19,10 +19,10 @@ const Home = () => {
                         <h1 className='text-2xl mt-5'>Bagas Adi Prayitno</h1>
                     </div>
                     <div className="content_2 flex justify-center pt-16">
-                        ASU
-                        {/* <div className='isi pt-16'> */}
-                        {/* <img src={reactLogo} alt="" className='image w-5/6' /> */}
-                        {/* </div> */}
+                        {/* ASU */}
+                        <div className='isi flex justify-center'>
+                            <img src={reactLogo} alt="" className='image w-5/6' />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -150,13 +150,13 @@ a:hover {
   @apply w-full max-w-7xl flex
 }
 
-/* .content_1 {
+.content_1 {
   width: 50%;
 }
 
 .content_2 {
   width: 50%;
-} */
+}
 
 .burger_menu {
   display: none;
