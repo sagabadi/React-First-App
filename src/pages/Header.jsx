@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom"
 import { useLocation } from 'react-router-dom'
 import instagram from '../assets/instagram.png'
 import github from '../assets/github.png'
+import email from '../assets/email.png'
 // import ScriptTag from 'react-script-tag'
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
   }
   return (
     <>
-      <div className="header w-full flex pl-8 pr-8 bg-white shadow-sm">
+      <div className="header w-full flex pl-8 pr-8 bg-white shadow-sm place-items-center">
         <div className='burger_menu'>
           <button id="burger_menu_button" onClick={addToggle}>
             <div className="line_1 w-7 border border-black transition duration-200 ease-in-out origin-top-left"></div>
@@ -51,6 +52,12 @@ const Header = () => {
             <div className="bg_full">
             </div>
           </button>
+          {/* <div className=""> */}
+          <p className="avl awc awo axr text-xs mr-1">©2023 Designed By Bagas Adi Prayitno.</p>
+          {/* <a href="https://www.instagram.com/bagasadiprayitno/"><img className='instagram-img w-6 h-6' src={instagram} alt="" /></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDsRQNPTWwcHDljjZvjXdZDBfZLwtqnrNDftSQhJMqjxDdDskxRbtnmWWkMDSqVCFwlCpg"><img className='email-img w-6 h-6 ml-3' src={email} alt="" /></a>
+          <a href="https://github.com/sagabadi"><img className='github-img w-6 h-6 ml-3' src={github} alt="" /></a> */}
+          {/* </div> */}
         </div>
         <div className="flex w-full max-w-7xl justify-start">
           <div className="menu w-1/2 justify-between">
@@ -76,9 +83,10 @@ const Header = () => {
             </a>
           </div>
           <div className="menu w-1/2 justify-end place-items-center">
-            <p className="avl awc awo axr text-xs mr-5">©2023 Designed By Bagas Adi Prayitno.</p>
+            <p className="avl awc awo axr text-xs mr-6">©2023 Designed By Bagas Adi Prayitno.</p>
             <a href="https://www.instagram.com/bagasadiprayitno/"><img className='instagram-img w-6 h-6' src={instagram} alt="" /></a>
-            <img className='github-img w-6 h-6 ml-3' src={github} alt="" />
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDsRQNPTWwcHDljjZvjXdZDBfZLwtqnrNDftSQhJMqjxDdDskxRbtnmWWkMDSqVCFwlCpg"><img className='email-img w-6 h-6 ml-3' src={email} alt="" /></a>
+            <a href="https://github.com/sagabadi"><img className='github-img w-6 h-6 ml-3' src={github} alt="" /></a>
           </div>
         </div>
       </div>

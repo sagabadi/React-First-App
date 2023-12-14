@@ -27,7 +27,7 @@ const Profil = () => {
                 <img src={Banyuwangi_1} alt="" className='w-1/6'/>
               </div> */}
               <div className='flex justify-center pl-8 pr-8'>
-                <h1>The one and only children in the house "yow". An ordinary guy from Banyuwangi city who have a dream to become an extraordinary guy. Obsessed on Information Technology, especially in software Development. Currently working at Secretary Ministry of Indonesia as a Fullstack Web Developer</h1>
+                <h1>An ordinary guy from Banyuwangi city who have a dream to become an extraordinary guy. Obsessed on Information Technology, especially in software Development. Currently working at Secretary Ministry of Indonesia as a Fullstack Web Developer</h1>
               </div>
             </div>
             {/* <div className='isi_2 pt-20 w-1/2'>

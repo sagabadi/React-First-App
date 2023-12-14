@@ -139,7 +139,7 @@ a:hover {
 }
 
 .content {
-  padding-top: 110px;
+  padding-top: 7vh;
   /* min-width: 800px; */
   /* display: inline-flex; */
   @apply flex flex-row;
@@ -222,7 +222,7 @@ a:hover {
     z-index: 998;
     height: 100vh;
     border-top: white;
-    @apply left-0 top-60 w-full block fixed pt-24 bg-black opacity-50
+    @apply left-0 top-52 w-full block fixed pt-24 bg-black opacity-50
   }
 
   /* .burger_menu_button-active > .bg_full_{
@@ -267,7 +267,8 @@ a:hover {
   }
 
   .burger_menu {
-    display: inline-block;
+    /* display: inline-block; */
+    @apply  flex-row fixed flex w-full justify-between pl-8 pr-8;
     padding: 0.5 rem;
   }
 
