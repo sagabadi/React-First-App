@@ -14,6 +14,7 @@ import react from '../assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import Header from "./Header"
+import Footer from "./Footer"
 
 const Profil = () => {
   // const [count, setCount] = useState(0)
@@ -66,6 +67,7 @@ const Profil = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
