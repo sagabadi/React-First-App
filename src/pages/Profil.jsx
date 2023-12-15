@@ -25,7 +25,7 @@ const Profil = () => {
         <div className='content-primary justify-between flex-col'>
           <div className="content_11 w-full">
             <div className='isi pt-16'>
-              <h1 className='title text-6xl'>Hello Everyone!!</h1>
+              <h1 className='title text-6xl'>Hi Everyone!!</h1>
               <h1 className='text-2xl mt-5'>This is Bagas Adi Prayitno</h1>
             </div>
           </div>
