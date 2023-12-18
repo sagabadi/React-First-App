@@ -39,27 +39,29 @@ const Profil = () => {
                 <img src={Banyuwangi_1} alt="" className='w-1/6'/>
               </div> */}
               <div className='flex justify-center mb-14 pl-8 pr-8'>
-                <h1>An ordinary guy from Banyuwangi city who have a dream to become an extraordinary guy. Obsessed on Information Technology, especially in software Development. Currently working at Secretary Ministry of Indonesia as a Fullstack Web Developer</h1>
+                <h1 className='max-w-5xl'>An ordinary guy from Banyuwangi city who have a dream to become an extraordinary guy. Obsessed on Information Technology, especially in software Development. Currently working at Secretary Ministry of Indonesia as a Fullstack Web Developer</h1>
               </div>
               <div className="line w-full flex justify-center">
                 <div className="line-1 mb-14 shadow-2xl"></div>
               </div>
               <div className='flex justify-center pl-8 pr-8 mb-14'>
-                <h1>I like to learn the technology of Software Development especially in Programming Language. Here some Programming Language, SQL or Framework that i've been learned</h1>
+                <h1 className='max-w-5xl'>I like to learn the technology of Software Development especially in Programming Language. Here some Programming Language, SQL or Framework that i've been learned</h1>
               </div>
-              <div className='grid gap-9 justify-items-center pl-8 pr-8 mb-14'>
-                <img className='php-img w-12 h-12' src={php} alt="" />
-                <img className='php-img w-12 h-12' src={html} alt="" />
-                <img className='php-img w-12 h-12' src={css} alt="" />
-                <img className='php-img w-12 h-12' src={js} alt="" />
-                <img className='php-img w-12 h-12' src={python} alt="" />
-                <img className='php-img w-16 h-12' src={go} alt="" />
-                <img className='php-img w-12 h-12' src={mysql} alt="" />
-                <img className='php-img w-12 h-12' src={bootstrap} alt="" />
-                <img className='php-img w-16 h-12' src={tailwind} alt="" />
-                <img className='php-img w-14 h-12' src={codeigniter} alt="" />
-                <img className='php-img w-12 h-12' src={laravel} alt="" />
-                <img className='php-img w-12 h-12' src={react} alt="" />
+              <div className='flex justify-center'>
+                <div className='grid gap-9 justify-items-center pl-8 pr-8 mb-14'>
+                  <img className='php-img w-12 h-12' src={php} alt="" />
+                  <img className='php-img w-12 h-12' src={html} alt="" />
+                  <img className='php-img w-12 h-12' src={css} alt="" />
+                  <img className='php-img w-12 h-12' src={js} alt="" />
+                  <img className='php-img w-12 h-12' src={python} alt="" />
+                  <img className='php-img w-16 h-12' src={go} alt="" />
+                  <img className='php-img w-12 h-12' src={mysql} alt="" />
+                  <img className='php-img w-12 h-12' src={bootstrap} alt="" />
+                  <img className='php-img w-16 h-12' src={tailwind} alt="" />
+                  <img className='php-img w-14 h-12' src={codeigniter} alt="" />
+                  <img className='php-img w-12 h-12' src={laravel} alt="" />
+                  <img className='php-img w-12 h-12' src={react} alt="" />
+                </div>
               </div>
             </div>
             {/* <div className='isi_2 pt-20 w-1/2'>
@@ -67,7 +69,7 @@ const Profil = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }

@@ -1,5 +1,5 @@
 #root {
-  /* max-width: 1280px; */
+  min-width: 375px;
   /* height: 1000px; */
   /* margin: 0 auto; */
   /* padding-top: 2rem; */
@@ -9,12 +9,16 @@
   text-align: center;
 }
 
+body {
+  min-width: 375px;
+}
+
 .foot_root{
   @apply flex w-full pr-8 pl-8 justify-center
 }
 
 .foot{
-  @apply flex justify-between items-center border p-6 rounded-md w-full max-w-7xl;
+  @apply flex justify-between items-center border-t-2 p-6 rounded-md w-full max-w-7xl;
 }
 
 .footer{
@@ -263,19 +267,19 @@ a:hover {
   }
 
   .content_1 {
-    width: 100%;
+    width: 100vw;
   }
 
   .isi_1 {
-    width: 100%;
+    width: 100vw;
   }
 
   .content_2 {
-    width: 100%;
+    width: 100vw;
   }
 
   .line-1 {
-    width: 80%;
+    width: 80vw;
   }
 
   .burger_menu {
