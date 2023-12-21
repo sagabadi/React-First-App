@@ -18,18 +18,18 @@ const Experience = () => {
             <div className='isi pt-16'>
               <h1 className='title text-6xl'>Work Experience</h1>
             </div>
-            <div className='grid grid-cols-2 gap-9 justify-items-center pl-10 pr-10 mb-14'>
+            <div className='work-grid justify-items-center mb-14'>
               <div className="box flex-col pl-6 pr-6 pt-6 pb-6 shadow-md rounded-xl">
-                <h1 className="text-lg font-medium">(2021 - Present) Secretary Ministry of Indonesia</h1>
-                <p className="mt-5 text-justify">My role is Fullstack developer here. I've been contribute to develop any application for Secretary Ministry Employee. The most complex application that i've been made was SIKKP (Sistem Informasi Kehadiran dan Kinerja Pegawai). This Application is used for monitoring presence, performance of the employee and This app also used as reference from performance allowance payment. Beside that, i also contribute to develop SETNEG POINT App. This app is a mobile app that used for recording the employee presence. My role is Backend Developer for SETNEG POINT App</p>
+                <h1 className="text-lg font-semibold">(2021 - Present) Secretary Ministry of Indonesia</h1>
+                <p className="mt-5 text-left">My role is Fullstack developer here. I've been contribute to develop any application for Secretary Ministry Employee. The most complex application that i've been made was SIKKP (Sistem Informasi Kehadiran dan Kinerja Pegawai). This Application is used for monitoring presence, performance of the employee and This app also used as reference from performance allowance payment. Beside that, i also contribute to develop SETNEG POINT App. This app is a mobile app that used for recording the employee presence. My role is Backend Developer for SETNEG POINT App</p>
               </div>
               <div className="box pl-6 pr-6 pt-6 pb-6 shadow-md rounded-xl">
                 <h1 className="text-lg font-medium">(2019 - 2020) PT. Evotech Distribusi</h1>
-                <p className="mt-5 text-justify">In PT. Evotech Distribusi, My role was Fullstack Developer. But the different is, We use Outsystems as tool to develop an application. Here, i contribute to develop a mobile app for for the FIF customer. This app is used to redeem some gift from FIF as the appreciation for their customer trust.</p>
+                <p className="mt-5 text-left">In PT. Evotech Distribusi, My role was Fullstack Developer. But the different is, We use Outsystems as tool to develop an application. Here, i contribute to develop a mobile app for for the FIF customer. This app is used to redeem some gift from FIF as the appreciation for their customer trust.</p>
               </div>
               <div className="box flex-col pl-6 pr-6 pt-6 pb-6 shadow-md rounded-xl">
                 <h1 className="text-lg font-medium">(2018) Illiyin Studio</h1>
-                <p className="mt-5 text-justify">My role is Fullstack developer here. I've been contribute to develop any application for Secretary Ministry Employee. The most complex application that i've been made was SIKKP (Sistem Informasi Kehadiran dan Kinerja Pegawai). This Application is used for monitoring presence, performance of the employee and This app also used as reference from performance allowance payment. Beside that, i also contribute to develop SETNEG POINT App. This app is a mobile app that used for recording the employee presence. My role is Backend Developer for SETNEG POINT App</p>
+                <p className="mt-5 text-left">My role is Fullstack developer here. I've been contribute to develop any application for Secretary Ministry Employee. The most complex application that i've been made was SIKKP (Sistem Informasi Kehadiran dan Kinerja Pegawai). This Application is used for monitoring presence, performance of the employee and This app also used as reference from performance allowance payment. Beside that, i also contribute to develop SETNEG POINT App. This app is a mobile app that used for recording the employee presence. My role is Backend Developer for SETNEG POINT App</p>
               </div>
               {/* <div className="box flex-col pl-6 pr-6 pt-6 pb-6 shadow-md rounded-xl">
                     <h1 className="text-lg font-medium">(2014) PT. KISEL</h1>

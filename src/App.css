@@ -197,17 +197,25 @@ a:hover {
   display: none;
 }
 
-.grid {
-  @apply grid-cols-6;
+.icon-grid {
+  @apply grid gap-9 grid-cols-6;
+}
+
+.work-grid {
+  @apply grid gap-9 grid-cols-2 pl-10 pr-10;
 }
 
 @media only screen and (max-width: 800px) {
+  .work-grid {
+    @apply grid gap-9 grid-cols-1 pl-0 pr-0;
+  }
+
   .foot{
     @apply flex-col
   }
 
-  .grid {
-    @apply grid-cols-3;
+  .icon-grid {
+    @apply grid gap-9 grid-cols-3;
   }
 
   .footer_1{

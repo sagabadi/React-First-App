@@ -46,7 +46,7 @@ const Home = () => {
                                 <h1 className='max-w-5xl'>I like to learn the technology of Software Development especially in Programming Language. Here some Programming Language, SQL or Framework that i've been learned</h1>
                             </div>
                             <div className='flex justify-center'>
-                                <div className='grid gap-9 justify-items-center pl-8 pr-8 mb-14'>
+                                <div className='icon-grid justify-items-center pl-8 pr-8 mb-14'>
                                     <img className='php-img w-12 h-12' src={php} alt="" />
                                     <img className='php-img w-12 h-12' src={html} alt="" />
                                     <img className='php-img w-12 h-12' src={css} alt="" />
